@@ -15,8 +15,6 @@ export interface IConfig {
 const isDevMode =
   !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
-console.log(process.env.DATABASE_URL);
-
 const config: IConfig = {
   port: +process.env.PORT || 3000,
   debugLogging: isDevMode,

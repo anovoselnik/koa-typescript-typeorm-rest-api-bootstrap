@@ -16,6 +16,10 @@ import { cron } from './cron';
 
 require('dotenv').config();
 
+if (!config.databaseUrl) {
+  throw new Error('Please setup .env file to include DATABASE_URL');
+}
+
 // Get DB connection options from env variable
 const connectionOptions = PostgressConnectionStringParser.parse(
   config.databaseUrl,
