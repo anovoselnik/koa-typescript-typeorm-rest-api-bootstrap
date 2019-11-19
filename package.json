@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "REST API bootstrap using Nodejs + Koa + typescript + typeORM",
   "main": "dist/server.js",
+  "author": "Antonio Novoselnik",
   "scripts": {
     "watch-server": "nodemon --watch src -e ts,tsx --exec ts-node src/server.ts",
     "build-ts": "tsc",
