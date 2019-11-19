@@ -1,0 +1,53 @@
+{
+  "name": "koa-typescript-typeorm-rest-api-bootstrap",
+  "version": "1.0.0",
+  "description": "REST API bootstrap using Nodejs + Koa + typescript + typeORM",
+  "main": "dist/server.js",
+  "scripts": {
+    "watch-server": "nodemon --watch src -e ts,tsx --exec ts-node src/server.ts",
+    "build-ts": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "serve": "node dist/server.js",
+    "build": "npm run tslint && npm run build-ts",
+    "start": "npm run serve"
+  },
+  "devDependencies": {
+    "@types/cron": "^1.7.1",
+    "@types/dotenv": "^6.1.1",
+    "@types/koa": "2.0.49",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-helmet": "^3.1.2",
+    "@types/koa-jwt": "^3.3.0",
+    "@types/koa-router": "^7.0.42",
+    "@types/koa__cors": "^2.2.3",
+    "@types/node": "^12.0.12",
+    "@types/shelljs": "^0.8.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2",
+    "shelljs": "^0.8.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "bcrypt": "^3.0.6",
+    "class-validator": "^0.9.1",
+    "cron": "^1.7.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.0.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.1",
+    "koa-helmet": "^4.2.0",
+    "koa-jwt": "^3.3.2",
+    "koa-router": "^7.4.0",
+    "koa-swagger-decorator": "^1.5.16",
+    "pg": "^7.12.1",
+    "pg-connection-string": "^2.0.0",
+    "reflect-metadata": "^0.1.12",
+    "typeorm": "^0.2.18",
+    "winston": "^3.2.1"
+  }
+}
